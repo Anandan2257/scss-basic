@@ -1,0 +1,65 @@
+//Global variable
+$primary-color: blue;
+$secondary-color: orange;
+$font-size: 20px;
+$primary-padding:10% 5%;
+$colors-map:(light:rgb(249, 202, 202),medium:rgb(238, 105, 105),dark:rgb(247, 11, 11));
+
+.container {
+  color: $primary-color;
+  .Heading-1 {
+    font-size: $font-size +5; //it is used for + - * operation to change a font size
+    p {
+      color: green;
+    }
+  }
+  .Heading-2 {
+    color: map-get($colors-map, light);
+  }
+}
+
+//local variable
+
+.Heading-3 {
+  $primary-color: black;
+  h1 {
+    font-size: $font-size;
+    color: blueviolet;
+  }
+  p {
+    color: greenyellow;
+  }
+}
+
+//mixin global variable
+
+@mixin Heading-style($color : $secondary-color,$padding : $primary-padding){
+    color: $color;
+    padding: $padding;
+    font-size:$size; 
+}
+
+.mixin-method{
+    .content-1{
+        @include Heading-style($primary-color,10% 30%);
+        h1{
+            font-size: 25px;
+        }
+        p{
+            font-size: 10px;
+        }
+      
+    }
+    .content-2{
+        @include Heading-style(red,1% 5%);
+        h1{
+            font-size: 25px;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+    .content-3{
+        @include Heading-style();
+    }
+}

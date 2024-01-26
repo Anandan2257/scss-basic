@@ -1,0 +1,41 @@
+.container {
+  color: blue;
+}
+.container .Heading-1 {
+  font-size: 20px;
+}
+.container .Heading-1 p {
+  color: green;
+}
+.container .Heading-2 {
+  color: red;
+}
+
+.Heading-3 h1 {
+  font-size: 20px;
+  color: blueviolet;
+}
+.Heading-3 p {
+  color: greenyellow;
+}
+
+.mixin-method .content-1 {
+  color: blue;
+  padding: 10% 30%;
+}
+.mixin-method .content-1 h1 {
+  font-size: 25px;
+}
+.mixin-method .content-1 p {
+  font-size: 10px;
+}
+.mixin-method .content-2 {
+  color: red;
+  padding: 1% 5%;
+}
+.mixin-method .content-2 h1 {
+  font-size: 25px;
+}
+.mixin-method .content-2 p {
+  font-size: 10px;
+}/*# sourceMappingURL=style.css.map */
